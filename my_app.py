@@ -3,6 +3,7 @@ import dash_mantine_components as dmc
 from utils import navigacny_panel
 
 app = Dash(__name__, use_pages=True)
+server = app.server
 
 links = {
     "about_me": {"label": "About me"},
@@ -38,4 +39,4 @@ def change_theme(n_clicks, theme):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
